@@ -38,7 +38,7 @@ jobs:
 
         image_paths=()
         for tag in ${image_tags[@]}; do
-          image_paths+=("ghcr.io/$lc_repo:$tag")
+          image_paths+=("ghcr.io/$lc_repo/go-client:$tag")
         done
 
         # join with ',' and then skip first character
